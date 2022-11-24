@@ -10,4 +10,4 @@ To use virtual environment:
 To install the required packages:
 - pip install pygame
 - pip install PyOpenGL PyOpenGL_accelerate
-
+- pip install numpy
