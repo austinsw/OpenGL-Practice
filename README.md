@@ -11,3 +11,7 @@ To install the required packages:
 - pip install pygame
 - pip install PyOpenGL PyOpenGL_accelerate
 - pip install numpy
+
+20221125
+pip install pygame moderngl numpy
+pip install PyGLM
