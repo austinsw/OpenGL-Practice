@@ -20,8 +20,8 @@ class GraphicsEngine:
         # create opengl context
         pg.display.set_mode(self.WIN_SIZE, flags=pg.OPENGL | pg.DOUBLEBUF)
         # mouse settings
-        pg.event.set_grab(True)
-        pg.mouse.set_visible(False)
+        #pg.event.set_grab(True)
+        #pg.mouse.set_visible(False)
         # detect and use existing opengl context
         self.ctx = mgl.create_context()
         #self.ctx.front_face = 'cw'
@@ -37,7 +37,7 @@ class GraphicsEngine:
         # mesh
         self.mesh = Mesh(self)
         # scene
-        self.scene = Cube(self)
+        self.scene = Scene(self)
 
     def check_events(self):
         for event in pg.event.get():
