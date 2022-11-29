@@ -15,3 +15,6 @@ To install the required packages:
 20221125
 pip install pygame moderngl numpy
 pip install PyGLM
+
+20221128
+pip install pywavefront

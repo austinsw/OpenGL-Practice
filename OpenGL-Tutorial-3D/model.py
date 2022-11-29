@@ -16,7 +16,7 @@ class Cube:
     def get_texture(self, path):
         texture = pg.image.load(path).convert()
         texture = pg.transform.flip(texture, flip_x=False, flip_y=True)
-        #texture.fill('red')
+        texture.fill('red')
         texture = self.ctx.texture(size=texture.get_size(), components=3,
                                    data=pg.image.tostring(texture, 'RGB'))
         return texture
@@ -35,6 +35,7 @@ class Cube:
         # light
         self.shader_program['light.position'].write(self.app.light.position)
         self.shader_program['light.Ia'].write(self.app.light.Ia)
+        self.shader_program['light.Id'].write(self.app.light.Id)
         self.shader_program['light.Id'].write(self.app.light.Id)
         # texture
         self.shader_program['u_texture_0'] = 0
