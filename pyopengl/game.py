@@ -20,10 +20,10 @@ class App:
         glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA)
 
         self.triangle = Triangle()
-        self.shader = self.createShader("shaders/vertex.txt", "shaders/fragment.txt")
+        self.shader = self.createShader("pyopengl/shaders/vertex.txt", "pyopengl/shaders/fragment.txt")
         glUseProgram(self.shader)
         glUniform1i(glGetUniformLocation(self.shader, "imageTexture"), 0)
-        self.wood_texture = Material("gfx/cat.png")
+        self.wood_texture = Material("pyopengl/gfx/cat.png")
         self.mainLoop()
 
     def createShader(self, vertexFilepath, fragmentFilepath):
