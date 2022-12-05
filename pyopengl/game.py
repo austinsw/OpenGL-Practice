@@ -23,7 +23,7 @@ class App:
         self.shader = self.createShader("pyopengl/shaders/vertex.txt", "pyopengl/shaders/fragment.txt")
         glUseProgram(self.shader)
         glUniform1i(glGetUniformLocation(self.shader, "imageTexture"), 0)
-        self.wood_texture = Material("pyopengl/gfx/cat.png")
+        self.wood_texture = Material("pyopengl/gfx/wood.jpeg")
         self.mainLoop()
 
     def createShader(self, vertexFilepath, fragmentFilepath):
